@@ -5,40 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARD.net | Venta de PC, Componentes y Servicios Informáticos</title>
-     <!-- Font Awesome CDN -->
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
+    <div class="layout">
 
-       <header>
-        <nav>
-            <a href="../index.html" class="logo">
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="../index.html" class="main-nav__logo">
                 <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
             </a>
 
-            <ul class="menu">
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a class="active" href="./ofertas.html">Ofertas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+            <ul class="main-nav__menu">
+                <li class="main-nav__menu-item"><a href="./productos.html">Productos</a></li>
+                <li class="main-nav__menu-item"><a href="./servicios.html">Servicios</a></li>
+                <li class="main-nav__menu-item main-nav__menu-item--active"><a class="active"
+                        href="./ofertas.html">Ofertas</a></li>
+                <li class="main-nav__menu-item"><a href="./contacto.html">Contacto</a></li>
             </ul>
 
-            <div class="extras">
-                <input type="text" placeholder="Buscar..." class="buscador" />
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+            <div class="main-nav__extras">
+                <input type="text" placeholder="Buscar..." class="main-nav__search" />
+                <i class="main-nav__icon fa-solid fa-user"></i>
+                <i class="main-nav__icon fa-solid fa-cart-shopping"></i>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="site-main">
         <h1>Ofertas</h1>
     </main>
 
-    <footer>
+    <footer class="site-footer">
 
         <p>&copy; 2025 HARD.net - Todos los derechos reservados. Venta de PC, componentes y servicios informáticos en
             Argentina.</p>
@@ -46,7 +48,7 @@
 
     </footer>
 
-
+    </div>
 
 </body>
 

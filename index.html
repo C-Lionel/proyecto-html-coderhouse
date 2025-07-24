@@ -14,41 +14,47 @@
 
 <body>
 
-    <header>
-        <nav>
-            <a href="./index.html" class="logo">
+    <div class="layout">
+
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="./index.html" class="main-nav__logo">
                 <img src="./assets/imgs/Logo_white.svg" alt="Logo de la empresa" >
             </a>
 
-            <ul class="menu">
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/ofertas.html">Ofertas</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+            <ul class="main-nav__menu">
+                <li class="main-nav__menu-item"><a href="./pages/productos.html">Productos</a></li>
+                <li class="main-nav__menu-item"><a href="./pages/servicios.html">Servicios</a></li>
+                <li class="main-nav__menu-item"><a href="./pages/ofertas.html">Ofertas</a></li>
+                <li class="main-nav__menu-item"><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
 
-            <div class="extras">
-                <input type="text" placeholder="Buscar..." class="buscador" />
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+            <div class="main-nav__extras">
+                <input type="text" placeholder="Buscar..." class="main-nav__search" />
+                <i class="main-nav__icon fa-solid fa-user"></i>
+                <i class="main-nav__icon fa-solid fa-cart-shopping"></i>
             </div>
         </nav>
     </header>
 
 
-    <main>
+    <main class="site-main">
         <h1>Home</h1>
     </main>
 
-    <footer>
+    <footer class="site-footer">
 
-        <p>&copy; 2025 HARD.net - Todos los derechos reservados. Venta de PC, componentes y servicios informáticos en
-            Argentina.</p>
+        <div class="site-footer__content">
 
+        </div>
 
+        <p class="site-footer__copy">
+            &copy; 2025 HARD.net - Todos los derechos reservados. Venta de PC, componentes y servicios informáticos en
+            Argentina.
+        </p>
     </footer>
 
-
+    </div>
 
 </body>
 

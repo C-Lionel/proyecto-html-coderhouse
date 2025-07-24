@@ -1,9 +1,71 @@
-/* Reset y estilos generales */
+
+/* Reset */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Inter-regular';
+  src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-italic';
+  src: url('../fonts/Inter_18pt-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-medium';
+  src: url('../fonts/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-medium-italic';
+  src: url('../fonts/Inter_18pt-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-bold';
+  src: url('../fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-italic';
+  src: url('../fonts/Inter_18pt-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Establece el tamaño base para rem */
+
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* Opcional: para mejorar accesibilidad del texto */
+
+body {
+  font-family: 'inter-regular', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Estilos compartidos */
 
 h1 {
   color: black;
@@ -15,26 +77,22 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: grey;
-  padding: 1.5rem 2rem; /* más padding si querés más separación */
+  padding: 1.5rem 2rem;
 }
 
-/* Logo */
 .logo img {
-  height: 40px;
+  height: 2.5rem;
 }
 
-/* Menú */
 .menu {
   display: flex;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 40px; /* espacio entre los ítems */
-  margin-right: 40px; /* esto empuja el menú más a la derecha */
+  gap: 2.5rem; 
 }
 
-/* Ítems del menú */
 .menu li a {
   text-decoration: none;
   color: black;
@@ -42,11 +100,19 @@ nav {
   font-weight: bold;
 }
 
-/* Extras: buscador e íconos */
+.menu .active {
+  color: #0254ac;
+}
+
 .extras {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.extras i {
+  color: white;
+  font-size: 1.2rem;
 }
 
 .buscador {
@@ -55,7 +121,5 @@ nav {
   border-radius: 5px;
 }
 
-.icono {
-  width: 24px;
-  height: 24px;
-}
+
+

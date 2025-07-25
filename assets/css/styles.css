@@ -74,7 +74,9 @@ html, body {
   flex: 1;
 }
 
-/* Estilos compartidos */
+/* ESTILOS COMPARTIDOS */
+
+/* Main */
 
 h1 {
   color: black;
@@ -120,7 +122,7 @@ h1 {
   gap: 1rem;
 }
 
-.main-nav__icon {
+.main-nav__extras i {
   color: white;
   font-size: 1.2rem;
 }
@@ -131,12 +133,49 @@ h1 {
   border-radius: 5px;
 }
 
+/* Footer */
+
 .site-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 3rem;
   background-color: #222;
   color: white;
-  padding: 2rem;
-  text-align: center;
 }
+
+ .site-footer img {
+    height: 2.5rem;
+    margin-bottom: 1rem;
+ } 
+
+ .site-footer section p {
+   margin-bottom: 0.5rem;
+ }
+
+ .site-footer__info ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+ }
+
+ .site-footer__info-item a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+ }
+
+ .site-footer__redes i {
+  color: white;
+  font-size: 2rem;
+  padding: 0 1rem;
+ }
+
+
+
+
+
 
 
 

@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+  --color-primary: #021c3d;
+  --color-secondary: #9911b9;
+  --color-terciary: #f7af02;
+  --color-background: #f2f2f2;
+}
+
+
 /* Fonts locales */
 
 @font-face {
@@ -60,7 +69,7 @@ html, body {
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
-  background-color: #fff;
+  background-color: var(--color-background);
   color: #111;
 }
 
@@ -88,7 +97,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: grey;
+  background-color: var(--color-primary);
   padding: 1.5rem 2rem;
 }
 
@@ -107,13 +116,13 @@ h1 {
 
 .main-nav__menu-item a {
   text-decoration: none;
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .main-nav__menu-item--active a {
-  color: #0254ac;
+  color: var(--color-terciary);
 }
 
 .main-nav__extras {
@@ -125,6 +134,10 @@ h1 {
 .main-nav__extras i {
   color: white;
   font-size: 1.2rem;
+}
+
+.main-nav__extras .fa-cart-shopping {
+  color: var(--color-terciary);
 }
 
 .main-nav__search {
@@ -141,7 +154,7 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
   padding: 2rem 3rem;
-  background-color: #222;
+  background-color: var(--color-primary);
   color: white;
 }
 
@@ -167,7 +180,7 @@ h1 {
  }
 
  .site-footer__redes i {
-  color: white;
+  color: var(--color-terciary);
   font-size: 2rem;
   padding: 0 1rem;
  }

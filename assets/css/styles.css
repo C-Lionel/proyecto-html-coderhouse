@@ -240,8 +240,20 @@ h1 {
   justify-content: space-evenly;
 }
 
-.site-main-home__beneficio {
+.site-main-home__beneficios p {
   color: white;
+}
+
+.site-main-home__beneficios-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-main-home__beneficios-info i {
+  color: white;
+  font-size: 2rem;
 }
 
 .site-main-home__opiniones {

@@ -17,7 +17,7 @@
     <div class="layout">
 
         <header class="site-header">
-            <nav class="main-nav">
+            <nav class="main-nav container">
                 <a href="./index.html" class="main-nav__logo">
                     <img src="./assets/imgs/Logo_white.svg" alt="Logo de la empresa">
                 </a>
@@ -39,7 +39,7 @@
 
         <main class="site-main site-main-home">
 
-            <section class="site-main-home__hero">
+            <section class="site-main-home__hero container">
 
                 <section class="site-main-home__intro">
                     <h1 class="site-main-home__title">nuevos <br> ingresos</h1>
@@ -58,6 +58,8 @@
             </section>
 
             <section class="site-main-home__beneficios">
+
+                <div class="site-main-home__beneficios-container container">
 
                 <div class="site-main-home__beneficios-info">
                     <p>Hasta 18 cuotas</p>
@@ -79,13 +81,18 @@
                     <i class="fa-solid fa-wrench"></i>
                 </div>
 
+                </div>
+
             </section>
 
-            <section class="site-main-home__opiniones">
+            <section class="site-main-home__opiniones container">
                 <img src="./assets/imgs/Logo_black.svg" alt="Logo de la empresa">
                 <h2>¿Por qué comprar en HARD.net? - opiniones reales</h2>
                 <div class="site-main-home__opiniones-cards">
                     <img src="./assets/imgs/opinion_card.png" alt="Card opiniones">
+                    <img src="./assets/imgs/opinion_card.png" alt="Card opiniones">
+                </div>
+                <div class="site-main-home__opiniones-cards">
                     <img src="./assets/imgs/opinion_card.png" alt="Card opiniones">
                     <img src="./assets/imgs/opinion_card.png" alt="Card opiniones">
                 </div>
@@ -97,35 +104,37 @@
 
         <footer class="site-footer">
 
-            <div class="site-footer__content">
-                <img src="./assets/imgs/Logo_white.svg" alt="Logo de la empresa">
-                <section>
-                    <p>Venta de PC, componentes y servicios informáticos en Argentina.</p>
-                    <p>(11) 2150-9885</p>
-                    <p>ventas@hard-net.com.ar</p>
-                    <p>Rivadavia 17939 Morón Buenos Aires</p>
-                    <p>
-                        &copy; 2025 HARD.net - Todos los derechos reservados.
-                    </p>
-                </section>
+            <div class="site-footer__inner container">
+
+                <div class="site-footer__content">
+                    <img src="./assets/imgs/Logo_white.svg" alt="Logo de la empresa">
+                    <section>
+                        <p>Venta de PC, componentes y servicios informáticos en Argentina.</p>
+                        <p>(11) 2150-9885</p>
+                        <p>ventas@hard-net.com.ar</p>
+                        <p>Rivadavia 17939 Morón Buenos Aires</p>
+                        <p>
+                            &copy; 2025 HARD.net - Todos los derechos reservados.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="site-footer__info">
+                    <ul>
+                        <li class="site-footer__info-item"><a href="./pages/productos.html">Productos</a></li>
+                        <li class="site-footer__info-item"><a href="./pages/servicios.html">Servicios</a></li>
+                        <li class="site-footer__info-item"><a href="./pages/ofertas.html">Ofertas</a></li>
+                        <li class="site-footer__info-item"><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__redes">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
             </div>
-
-            <div class="site-footer__info">
-                <ul>
-                    <li class="site-footer__info-item"><a href="./pages/productos.html">Productos</a></li>
-                    <li class="site-footer__info-item"><a href="./pages/servicios.html">Servicios</a></li>
-                    <li class="site-footer__info-item"><a href="./pages/ofertas.html">Ofertas</a></li>
-                    <li class="site-footer__info-item"><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="site-footer__redes">
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-
-
         </footer>
 
     </div>

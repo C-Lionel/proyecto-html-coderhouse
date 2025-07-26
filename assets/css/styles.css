@@ -1,4 +1,3 @@
-
 /* Reset */
 
 * {
@@ -12,7 +11,8 @@
   --color-primary: #101010;
   --color-secondary: #9911b9;
   --color-terciary: #f7af02;
-  --color-background: #f2f2f2;
+  --color-background-primary: #f2f2f2;
+  --color-background-secondary: #aacaf0;
 }
 
 
@@ -69,7 +69,7 @@ html, body {
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
-  background-color: var(--color-background);
+  background-color: var(--color-background-primary);
   color: #111;
 }
 
@@ -106,10 +106,8 @@ html, body {
 /* Main */
 
 h1 {
-  color: black;
   text-transform: uppercase;
-  text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .main-nav {
@@ -130,7 +128,7 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 2.5rem; 
+  gap: 2.5rem;
 }
 
 .main-nav__menu-item a {
@@ -177,34 +175,34 @@ h1 {
   color: white;
 }
 
- .site-footer img {
-    height: 2.5rem;
-    margin-bottom: 1rem;
- } 
+.site-footer img {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
 
- .site-footer section p {
-   margin-bottom: 0.5rem;
- }
+.site-footer section p {
+  margin-bottom: 0.5rem;
+}
 
- .site-footer__info ul li {
+.site-footer__info ul li {
   margin-bottom: 1rem;
   list-style: none;
- }
+}
 
- .site-footer__info-item a {
+.site-footer__info-item a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
- }
+}
 
- .site-footer__redes i {
+.site-footer__redes i {
   color: var(--color-terciary);
   font-size: 2rem;
   padding: 0 1rem;
- }
+}
 
- /* HOME */
+/* HOME */
 
 .site-main-home__hero {
   display: flex;
@@ -215,7 +213,7 @@ h1 {
 }
 
 .site-main-home__intro {
- flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .site-main-home__image-section {
@@ -231,7 +229,7 @@ h1 {
 .site-main-home__image-fondo {
   width: 100%;
   height: auto;
-} 
+}
 
 .site-main-home__beneficios {
   background-color: black;
@@ -264,11 +262,175 @@ h1 {
   margin: 2rem 2rem;
 }
 
+/* PRODUCTOS */
 
+.site-main-productos__title {
+  text-align: center;
+  padding: 5rem;
+}
 
+.site-main-productos__hero {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.site-main-productos__cards img {
+  height: 25rem;
+}
 
+.site-main-productos__cards div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+}
 
+/* SERVICIOS */
 
+.site-main-servicios {
+  display: flex;
+  flex-direction: column;
+}
 
+.site-main-servicios__title {
+  text-align: center;
+  padding: 3rem;
+}
 
+.site-main-servicios__services {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.site-main-servicios__services-img img {
+  height: 25rem;
+}
+
+.site-main-servicios__services-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* OFERTAS */
+
+.site-main-ofertas__title {
+  padding: 3rem;
+}
+
+.site-main-ofertas__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.site-main-ofertas__cards img {
+  padding: 2rem 2rem;
+}
+
+/* CONTACTO */
+
+.site-main-contacto__title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.site-main-contacto__form {
+  background-color: var(--color-background-secondary);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  line-height: 2rem;
+
+}
+
+.site-main-contacto__form h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.site-main-contacto__form hr {
+  border: none;
+  border-top: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.site-main-contacto__form p {
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.site-main-contacto__form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: black;
+}
+
+.site-main-contacto__form label span {
+  color: red;
+}
+
+.site-main-contacto__form__row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.site-main-contacto__form__row div {
+  flex: 1;
+}
+
+.site-main-contacto__form input,
+.site-main-contacto__form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.site-main-contacto__form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.site-main-contacto__form button {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.site-main-contacto__form__contact {
+  background-color: var(--color-background-secondary);
+  padding: 1.5rem 2rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  max-width: 600px;
+  font-size: 0.95rem;
+  color: black;
+  line-height: 2;
+}
+
+.site-main-contacto__form__contact hr {
+  margin: 0.5rem 0 1rem 0;
+  border: none;
+  border-top: 1px solid black;
+}

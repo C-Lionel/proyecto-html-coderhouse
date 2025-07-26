@@ -9,7 +9,7 @@
 
 /* Variables */
 :root {
-  --color-primary: #021c3d;
+  --color-primary: #101010;
   --color-secondary: #9911b9;
   --color-terciary: #f7af02;
   --color-background: #f2f2f2;
@@ -85,12 +85,31 @@ html, body {
 
 /* ESTILOS COMPARTIDOS */
 
+/* Elementos */
+
+.btn-general {
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-terciary);
+  cursor: pointer;
+}
+
+.btn-general a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  text-transform: uppercase;
+}
+
 /* Main */
 
 h1 {
   color: black;
   text-transform: uppercase;
   text-align: center;
+  font-size: 5rem;
 }
 
 .main-nav {
@@ -184,6 +203,66 @@ h1 {
   font-size: 2rem;
   padding: 0 1rem;
  }
+
+ /* HOME */
+
+.site-main-home__hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 5rem;
+}
+
+.site-main-home__intro {
+ flex-basis: 50%;
+}
+
+.site-main-home__image-section {
+  flex-basis: 50%;
+}
+
+.site-main-home__title,
+.site-main-home__description {
+  margin-bottom: 2rem;
+}
+
+.site-main-home__image,
+.site-main-home__image-fondo {
+  width: 100%;
+  height: auto;
+} 
+
+.site-main-home__beneficios {
+  background-color: black;
+  padding: 3rem 0;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.site-main-home__beneficio {
+  color: white;
+}
+
+.site-main-home__opiniones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+
+.site-main-home__opiniones img {
+  height: 5rem;
+  margin: 2rem 0;
+}
+
+.site-main-home__opiniones-cards img {
+  height: 15rem;
+  margin: 2rem 2rem;
+}
 
 
 

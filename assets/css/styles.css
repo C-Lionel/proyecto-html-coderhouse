@@ -17,6 +17,7 @@
   --color-background-secondary: #aacaf0;
 
   /* ESPACIADOS */
+  
   --space-xxs: 0.25rem;   /* 4px */
   --space-xs:  0.5rem;    /* 8px */
   --space-sm:  1rem;      /* 16px */
@@ -125,7 +126,7 @@ html, body {
 
 h1 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: var(--space-xl);
 }
 
 .site-header {

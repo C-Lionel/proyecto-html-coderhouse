@@ -88,6 +88,7 @@ html, body {
 
 .site-main {
   flex: 1;
+  padding: var(--space-xl) 0;
 }
 
 .layout {
@@ -145,6 +146,7 @@ h1 {
 }
 
 .main-nav__menu {
+  font-size: var(--space-sm);
   display: flex;
   align-items: center;
   list-style: none;
@@ -188,7 +190,7 @@ h1 {
 /* Footer */
 
 .site-footer {
-  padding: 2rem 0;
+  padding: var(--space-xxl) 0;
   background-color: var(--color-primary);
   color: white;
 }

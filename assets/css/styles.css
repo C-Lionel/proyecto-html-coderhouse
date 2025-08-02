@@ -8,11 +8,23 @@
 
 /* Variables */
 :root {
+
+  /* COLORES */
   --color-primary: #101010;
   --color-secondary: #9911b9;
   --color-terciary: #f7af02;
   --color-background-primary: #f2f2f2;
   --color-background-secondary: #aacaf0;
+
+  /* ESPACIADOS */
+  --space-xxs: 0.25rem;   /* 4px */
+  --space-xs:  0.5rem;    /* 8px */
+  --space-sm:  1rem;      /* 16px */
+  --space-md:  1.5rem;    /* 24px */
+  --space-lg:  2rem;      /* 32px */
+  --space-xl:  3rem;      /* 48px */
+  --space-xxl: 4rem;      /* 64px */
+
 }
 
 
@@ -73,20 +85,20 @@ html, body {
   color: #111;
 }
 
+.site-main {
+  flex: 1;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.site-main {
-  flex: 1;
-}
-
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 /* ESTILOS COMPARTIDOS */

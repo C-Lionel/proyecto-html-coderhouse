@@ -339,7 +339,7 @@ h1 {
 
 .site-main-servicios__title {
   text-align: center;
-  padding: 3rem;
+  padding: var(--space-xl);
 }
 
 .site-main-servicios__services {
@@ -365,23 +365,33 @@ h1 {
 /* OFERTAS */
 
 .site-main-ofertas__title {
-  padding: 3rem;
+  text-align: center;
+  padding: var(--space-xl);
 }
 
 .site-main-ofertas__content {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
 }
 
-.site-main-ofertas__cards img {
-  padding: 2rem 2rem;
+.site-main-ofertas__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.site-main-ofertas__content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
 }
 
 /* CONTACTO */
 
 .site-main-contacto__title {
   text-align: center;
-  padding: 3rem;
+  padding: var(--space-xl);
 }
 
 .site-main-contacto__form {

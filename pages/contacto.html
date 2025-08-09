@@ -5,115 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARD.net | Venta de PC, Componentes y Servicios Informáticos</title>
+    <!-- Icono -->
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/icono_HARD.svg">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
-<body class="layout">
-    
-        <header class="site-header">
-            <nav class="main-nav container">
-                <a href="../index.html" class="main-nav__logo">
-                    <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
-                </a>
+<body>
 
-                <ul class="main-nav__menu">
-                    <li class="main-nav__menu-item"><a href="./productos.html">Productos</a></li>
-                    <li class="main-nav__menu-item"><a href="./servicios.html">Servicios</a></li>
-                    <li class="main-nav__menu-item"><a href="./ofertas.html">Ofertas</a></li>
-                    <li class="main-nav__menu-item main-nav__menu-item--active"><a href="./contacto.html">Contacto</a>
-                    </li>
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="../index.html" class="main-nav__logo">
+                <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
+            </a>
+
+            <ul class="main-nav__menu">
+                <li class="main-nav__menu-item"><a href="./productos.html">Productos</a></li>
+                <li class="main-nav__menu-item"><a href="./servicios.html">Servicios</a></li>
+                <li class="main-nav__menu-item"><a href="./ofertas.html">Ofertas</a></li>
+                <li class="main-nav__menu-item main-nav__menu-item--active"><a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="main-nav__extras">
+                <input type="text" placeholder="Buscar..." class="main-nav__search" />
+                <i class="main-nav__icon fa-solid fa-user"></i>
+                <i class="main-nav__icon fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-main-contacto">
+
+        <h1 class="site-main-contacto__title">Contactanos</h1>
+
+        <form class="site-main-contacto__form">
+
+            <h2>Dejanos tu consulta</h2>
+            <hr>
+            <p>Te responderemos a la brevedad.</p>
+
+            <div class="site-main-contacto__form__row">
+                <div>
+                    <label for="nombre">Nombre <span>*</span></label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div>
+                <label for="consulta">Ingresá tu consulta <span>*</span></label>
+                <textarea id="consulta" name="consulta" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="site-main-contacto__form__contact">
+            <p><em><strong>HARD.net</strong></em></p>
+            <hr>
+            <p><strong>Horario de atención online:</strong> Lunes a Viernes de 8:30 hs a 18:00 hs.</p>
+            <p><strong>Teléfono CABA:</strong> +54 9 11 52321555</p>
+            <p><strong>Teléfono Mar del Plata:</strong> +54 9 223 46295500</p>
+            <p><strong>WhatsApp:</strong> +54 9 11 25125000 Solo mensajes</p>
+            <p><strong>Email:</strong> info@hardnet.com.ar</p>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="site-footer__inner">
+
+            <div class="site-footer__content">
+                <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
+                <section>
+                    <p>Venta de PC, componentes y servicios informáticos en Argentina.</p>
+                    <p>(11) 2150-9885</p>
+                    <p>ventas@hard-net.com.ar</p>
+                    <p>Rivadavia 17939 Morón Buenos Aires</p>
+                    <p>
+                        &copy; 2025 HARD.net - Todos los derechos reservados.
+                    </p>
+                </section>
+            </div>
+
+            <div class="site-footer__info">
+                <ul>
+                    <li class="site-footer__info-item"><a href="../pages/productos.html">Productos</a></li>
+                    <li class="site-footer__info-item"><a href="../pages/servicios.html">Servicios</a></li>
+                    <li class="site-footer__info-item"><a href="../pages/ofertas.html">Ofertas</a></li>
+                    <li class="site-footer__info-item"><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
-
-                <div class="main-nav__extras">
-                    <input type="text" placeholder="Buscar..." class="main-nav__search" />
-                    <i class="main-nav__icon fa-solid fa-user"></i>
-                    <i class="main-nav__icon fa-solid fa-cart-shopping"></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="site-main site-main-contacto">
-
-            <h1 class="site-main-contacto__title">Contactanos</h1>
-
-            <form class="site-main-contacto__form container">
-
-                <h2>Dejanos tu consulta</h2>
-                <hr>
-                <p>Te responderemos a la brevedad.</p>
-
-                <div class="site-main-contacto__form__row">
-                    <div>
-                        <label for="nombre">Nombre <span>*</span></label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div>
-                        <label for="email">Email <span>*</span></label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                </div>
-
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </div>
-
-                <div>
-                    <label for="consulta">Ingresá tu consulta <span>*</span></label>
-                    <textarea id="consulta" name="consulta" required></textarea>
-                </div>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-            <div class="site-main-contacto__form__contact container">
-                <p><em><strong>HARD.net</strong></em></p>
-                <hr>
-                <p><strong>Horario de atención online:</strong> Lunes a Viernes de 8:30 hs a 18:00 hs.</p>
-                <p><strong>Teléfono CABA:</strong> +54 9 11 52321555</p>
-                <p><strong>Teléfono Mar del Plata:</strong> +54 9 223 46295500</p>
-                <p><strong>WhatsApp:</strong> +54 9 11 25125000 Solo mensajes</p>
-                <p><strong>Email:</strong> info@hardnet.com.ar</p>
             </div>
 
-        </main>
-
-        <footer class="site-footer">
-
-            <div class="site-footer__inner container">
-
-                <div class="site-footer__content">
-                    <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
-                    <section>
-                        <p>Venta de PC, componentes y servicios informáticos en Argentina.</p>
-                        <p>(11) 2150-9885</p>
-                        <p>ventas@hard-net.com.ar</p>
-                        <p>Rivadavia 17939 Morón Buenos Aires</p>
-                        <p>
-                            &copy; 2025 HARD.net - Todos los derechos reservados.
-                        </p>
-                    </section>
-                </div>
-
-                <div class="site-footer__info">
-                    <ul>
-                        <li class="site-footer__info-item"><a href="../pages/productos.html">Productos</a></li>
-                        <li class="site-footer__info-item"><a href="../pages/servicios.html">Servicios</a></li>
-                        <li class="site-footer__info-item"><a href="../pages/ofertas.html">Ofertas</a></li>
-                        <li class="site-footer__info-item"><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div class="site-footer__redes">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
+            <div class="site-footer__redes">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
-        </footer>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 
 </body>
 

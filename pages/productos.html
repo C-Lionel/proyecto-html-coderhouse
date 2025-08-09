@@ -18,26 +18,51 @@
 
 <body>
 
-    <header class="site-header">
-        <nav class="main-nav">
-            <a href="../index.html" class="main-nav__logo">
-                <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
-            </a>
+      <header class="site-header">
 
-            <ul class="main-nav__menu">
-                <li class="main-nav__menu-item main-nav__menu-item--active"><a class="active"
-                        href="./productos.html">Productos</a></li>
-                <li class="main-nav__menu-item"><a href="./servicios.html">Servicios</a></li>
-                <li class="main-nav__menu-item"><a href="./ofertas.html">Ofertas</a></li>
-                <li class="main-nav__menu-item"><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="site-header__nav navbar navbar-expand-lg">
 
-            <div class="main-nav__extras">
-                <input type="text" placeholder="Buscar..." class="main-nav__search" />
-                <i class="main-nav__icon fa-solid fa-user"></i>
-                <i class="main-nav__icon fa-solid fa-cart-shopping"></i>
+            <div class="site-header__container container">
+
+                <a class="site-header__logo p-2 w-25 " href="../index.html">
+                    <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
+                </a>
+
+                <button class="bg-white navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="site-header__menu collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="site-header__links navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light active" aria-current="page" href="../pages/productos.html">productos</a>
+                        </li>
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light" aria-current="page" href="../pages/servicios.html">servicios</a>
+                        </li>
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light" aria-current="page" href="../pages/ofertas.html">ofertas</a>
+                        </li>
+                        <li class="site-header__item nav-item me-3">
+                            <a class="site-header__link nav-link text-light" aria-current="page" href="../pages/contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                    
+                   <form class="site-header__search d-flex align-items-center" role="search">
+                        <input class="site-header__search-input form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                        <button class="site-header__search-button btn btn-outline-info me-2" type="submit">Buscar</button>
+                        <i class="site-header__i fa-solid fa-user fs-5 me-2"></i>
+                        <i class="site-header__i fa-solid fa-cart-shopping fs-5"></i>
+                    </form>
+                </div>
+                
             </div>
+
         </nav>
+
     </header>
 
     <main class="site-main-productos">

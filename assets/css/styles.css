@@ -186,7 +186,7 @@ html, body {
 
 /* HOME */
 
-.site-main-home__hero {
+/* .site-main-home__hero {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -211,7 +211,10 @@ html, body {
 .site-main-home__image-fondo {
   width: 100%;
   height: auto;
-}
+} */
+
+
+
 
 .site-main-home__beneficios {
   background-color: black;

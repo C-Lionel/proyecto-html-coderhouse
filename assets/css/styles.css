@@ -141,7 +141,7 @@ html, body {
   color: var(--color-terciary);
 }
 
-/* Footer */
+/* FOOTER */
 
 .site-footer {
   padding: var(--space-xxl) 0;
@@ -185,36 +185,6 @@ html, body {
 }
 
 /* HOME */
-
-/* .site-main-home__hero {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 5rem;
-}
-
-.site-main-home__intro {
-  flex-basis: 50%;
-}
-
-.site-main-home__image-section {
-  flex-basis: 50%;
-}
-
-.site-main-home__title,
-.site-main-home__description {
-  margin-bottom: 2rem;
-}
-
-.site-main-home__image,
-.site-main-home__image-fondo {
-  width: 100%;
-  height: auto;
-} */
-
-
-
 
 .site-main-home__beneficios {
   background-color: black;
@@ -265,27 +235,6 @@ html, body {
 
 /* PRODUCTOS */
 
-.site-main-productos__title {
-  text-align: center;
-  padding: 5rem;
-}
-
-.site-main-productos__hero {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.site-main-productos__cards img {
-  height: 25rem;
-}
-
-.site-main-productos__cards div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5rem;
-  padding: 2rem;
-}
 
 /* SERVICIOS */
 
@@ -294,16 +243,10 @@ html, body {
   flex-direction: column;
 }
 
-.site-main-servicios__title {
-  text-align: center;
-  padding: var(--space-xl);
-}
-
 .site-main-servicios__services {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 5rem;
 }
 
 .site-main-servicios__services-img img {
@@ -325,10 +268,6 @@ html, body {
   background-color: var(--color-background-primary);
 }
 
-.site-main-ofertas__title {
-  text-align: center;
-  padding: var(--space-xl);
-}
 
 .site-main-ofertas__content {
   display: grid;
@@ -352,7 +291,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--space-xl);
 }
 
 .site-main-ofertas__categories-group .list-group-item {
@@ -380,11 +318,6 @@ html, body {
 }
 
 /* CONTACTO */
-
-.site-main-contacto__title {
-  text-align: center;
-  padding: var(--space-xl);
-}
 
 .site-main-contacto__form {
   background-color: var(--color-background-secondary);

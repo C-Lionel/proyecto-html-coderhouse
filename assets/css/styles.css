@@ -93,26 +93,6 @@ html, body {
   color: #111;
 }
 
-/* ESTILOS COMPARTIDOS */
-
-/* Elementos */
-
-.btn-general {
-  font-size: 1.2rem;
-  padding: 0.7rem 2rem;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--color-terciary);
-  cursor: pointer;
-}
-
-.btn-general a {
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  text-transform: uppercase;
-}
-
 
 /* Main */
 
@@ -181,7 +161,7 @@ html, body {
 .site-footer__redes i {
   color: var(--color-terciary);
   font-size: 2rem;
-  /* padding: 0 1rem; */
+  cursor: pointer;
 }
 
 /* HOME */
@@ -212,32 +192,6 @@ html, body {
 .site-main-home__beneficios-info i {
   color: white;
   font-size: 2rem;
-}
-
-/* SERVICIOS */
-
-.site-main-servicios {
-  display: flex;
-  flex-direction: column;
-}
-
-.site-main-servicios__services {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.site-main-servicios__services-img img {
-  height: 25rem;
-}
-
-.site-main-servicios__services-type {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1.5rem;
-  padding: 2rem;
 }
 
 /* OFERTAS */

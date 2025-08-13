@@ -215,22 +215,11 @@ html, body {
   font-size: 2rem;
 }
 
-.site-main-home__opiniones {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 3rem;
-}
 
 .site-main-home__opiniones img {
-  height: 5rem;
-  margin: 2rem 0;
-}
-
-.site-main-home__opiniones-cards img {
-  height: 15rem;
-  margin: 2rem 2rem;
+  display: block;
+  height: var(--space-xxl);
+  margin: 0 auto;
 }
 
 /* PRODUCTOS */
@@ -267,7 +256,6 @@ html, body {
 .site-main-ofertas {
   background-color: var(--color-background-primary);
 }
-
 
 .site-main-ofertas__content {
   display: grid;

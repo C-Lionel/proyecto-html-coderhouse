@@ -188,7 +188,6 @@ html, body {
 
 .site-main-home__beneficios {
   background-color: black;
-  padding: 3rem 0;
   font-size: 22px;
 }
 
@@ -214,16 +213,6 @@ html, body {
   color: white;
   font-size: 2rem;
 }
-
-
-.site-main-home__opiniones img {
-  display: block;
-  height: var(--space-xxl);
-  margin: 0 auto;
-}
-
-/* PRODUCTOS */
-
 
 /* SERVICIOS */
 

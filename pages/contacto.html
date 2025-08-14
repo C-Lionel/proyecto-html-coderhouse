@@ -18,7 +18,7 @@
 
 <body>
 
-      <header class="site-header">
+    <header class="site-header">
 
         <nav class="site-header__nav navbar navbar-expand-lg">
 
@@ -28,7 +28,7 @@
                     <img src="../assets/imgs/Logo_white.svg" alt="Logo de la empresa">
                 </a>
 
-                 <button class="bg-white navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="bg-white navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,27 +38,33 @@
 
                     <ul class="site-header__links navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="site-header__item nav-item me-3">
-                            <a class="site-header__link nav-link text-light" aria-current="page" href="../pages/productos.html">productos</a>
+                            <a class="site-header__link nav-link text-light" aria-current="page"
+                                href="../pages/productos.html">productos</a>
                         </li>
                         <li class="site-header__item nav-item me-3">
-                            <a class="site-header__link nav-link text-light" aria-current="page" href="../pages/servicios.html">servicios</a>
+                            <a class="site-header__link nav-link text-light" aria-current="page"
+                                href="../pages/servicios.html">servicios</a>
                         </li>
                         <li class="site-header__item nav-item me-3">
-                            <a class="site-header__link nav-link text-light" aria-current="page" href="../pages/ofertas.html">ofertas</a>
+                            <a class="site-header__link nav-link text-light" aria-current="page"
+                                href="../pages/ofertas.html">ofertas</a>
                         </li>
                         <li class="site-header__item nav-item me-3">
-                            <a class="site-header__link nav-link text-light active" aria-current="page" href="../pages/contacto.html">contacto</a>
+                            <a class="site-header__link nav-link text-light active" aria-current="page"
+                                href="../pages/contacto.html">contacto</a>
                         </li>
                     </ul>
-                    
-                  <form class="site-header__search d-flex align-items-center" role="search">
-                        <input class="site-header__search-input form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                        <button class="site-header__search-button btn btn-outline-info me-2" type="submit">Buscar</button>
+
+                    <form class="site-header__search d-flex align-items-center" role="search">
+                        <input class="site-header__search-input form-control me-2" type="search" placeholder="Buscar"
+                            aria-label="Search" />
+                        <button class="site-header__search-button btn btn-outline-info me-2"
+                            type="submit">Buscar</button>
                         <i class="site-header__i fa-solid fa-user fs-5 me-2"></i>
                         <i class="site-header__i fa-solid fa-cart-shopping fs-5"></i>
                     </form>
                 </div>
-                
+
             </div>
 
         </nav>
@@ -69,47 +75,47 @@
 
         <div class="container">
 
-        <h1 class="site-main-contacto__title text-center p-5">Contactanos</h1>
+            <h1 class="site-main-contacto__title text-center p-5">Contactanos</h1>
 
-        <form class="site-main-contacto__form">
+            <form class="site-main-contacto__form">
 
-            <h2>Dejanos tu consulta</h2>
-            <hr>
-            <p>Te responderemos a la brevedad.</p>
+                <h2>Dejanos tu consulta</h2>
+                <hr>
+                <p>Te responderemos a la brevedad.</p>
 
-            <div class="site-main-contacto__form__row">
-                <div>
-                    <label for="nombre">Nombre <span>*</span></label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <div class="site-main-contacto__form__row">
+                    <div>
+                        <label for="nombre">Nombre <span>*</span></label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
                 </div>
+
                 <div>
-                    <label for="email">Email <span>*</span></label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
                 </div>
+
+                <div>
+                    <label for="consulta">Ingresá tu consulta <span>*</span></label>
+                    <textarea id="consulta" name="consulta" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="site-main-contacto__form__contact">
+                <p><em><strong>HARD.net</strong></em></p>
+                <hr>
+                <p><strong>Horario de atención online:</strong> Lunes a Viernes de 8:30 hs a 18:00 hs.</p>
+                <p><strong>Teléfono CABA:</strong> +54 9 11 52321555</p>
+                <p><strong>Teléfono Mar del Plata:</strong> +54 9 223 46295500</p>
+                <p><strong>WhatsApp:</strong> +54 9 11 25125000 Solo mensajes</p>
+                <p><strong>Email:</strong> info@hardnet.com.ar</p>
             </div>
-
-            <div>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono">
-            </div>
-
-            <div>
-                <label for="consulta">Ingresá tu consulta <span>*</span></label>
-                <textarea id="consulta" name="consulta" required></textarea>
-            </div>
-
-            <button type="submit">Enviar</button>
-        </form>
-
-        <div class="site-main-contacto__form__contact">
-            <p><em><strong>HARD.net</strong></em></p>
-            <hr>
-            <p><strong>Horario de atención online:</strong> Lunes a Viernes de 8:30 hs a 18:00 hs.</p>
-            <p><strong>Teléfono CABA:</strong> +54 9 11 52321555</p>
-            <p><strong>Teléfono Mar del Plata:</strong> +54 9 223 46295500</p>
-            <p><strong>WhatsApp:</strong> +54 9 11 25125000 Solo mensajes</p>
-            <p><strong>Email:</strong> info@hardnet.com.ar</p>
-        </div>
 
         </div>
 
